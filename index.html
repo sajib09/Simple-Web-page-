@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h3 style="color:rgba(7, 161, 53, 0.952);">CSE, Daffodil International University</h3>
+    
+    <button id="tryMe">Try me</button>
+
+    <!-- Login Box -->
+    <fieldset>
+        <legend><h3>Log in</h3></legend>
+        <form id="loginForm">
+            <label>Username:</label>
+            <input type="text" id="loginUsername" required><br><br>
+
+            <label>Password:</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            <p>One capital letter required<br>One lowercase letter required<br>One digit required<br>One special character required</p>
+
+            <button type="submit">SAVE</button>
+        </form>
+    </fieldset>
+
+    <br>
+
+    <!-- Registration Box -->
+    <fieldset>
+        <legend><h3>Registration</h3></legend>
+        <form id="registrationForm">
+            <label>First Name:</label>
+            <input type="text" id="firstName" required> <span id="errorMsg" style="color:red; display:none;">Username required</span><br><br>
+
+            <label>Last Name:</label>
+            <input type="text" id="lastName"><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob"><br><br>
+
+            <label>Email:</label>
+            <input type="email" id="email"><br><br>
+
+            <label>Programming Language:</label><br>
+            <input type="checkbox" name="language" value="C"> C
+            <input type="checkbox" name="language" value="Java"> Java
+            <input type="checkbox" name="language" value="Python"> Python
+            <input type="checkbox" name="language" value="PHP"> PHP
+            <input type="checkbox" name="language" value="C#"> C#<br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </fieldset>
+</body>
+</html>
